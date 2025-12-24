@@ -10,7 +10,7 @@
 </head>
 
 <body
-  class="bg-[url(./assets/images/bg-header-mobile.png)] bg-top bg-contain bg-no-repeat [&>*:not(img):not(footer)]:max-w-[1440px] min-h-screen text-gray-500 font-body flex flex-col justify-center items-center text-center [&>*:not(img)]:p-[2.150rem] md:bg-[url(./assets/images/bg-header-desktop.png)] md:[&>*:not(img)]:p-20">
+  class="bg-white bg-[url(./assets/images/bg-header-mobile.png)] bg-top bg-contain bg-no-repeat [&>*:not(img):not(footer)]:max-w-[1440px] min-h-screen text-gray-500 font-body flex flex-col justify-center items-center text-center [&>*:not(img)]:p-[2.150rem] md:bg-[url(./assets/images/bg-header-desktop.png)] md:[&>*:not(img)]:p-20">
   <main class="flex flex-col grow gap-40 !py-32">
     <section class="flex flex-col justify-center items-center gap-5 md:gap-10">
       <figure class="flex justify-center items-center">
@@ -81,7 +81,7 @@
       </header>
       <ul class="grid grid-cols-1 gap-10 md:grid-cols-3">
         <li class="flex-col-gap-8">
-          <img src="./src/assets/images/icon-blacklist.svg" alt="" class="h-8 object-contain">
+          <img src="./src/assets/images/icon-blacklist.svg" alt="" aria-hidden="true" class="h-8 object-contain">
           <section class="flex-col-gap-2 items-center">
             <h3 class="section-title-xl">Create blacklists</h3>
             <p class="max-w-[760px] lg:text-xl/normal">Ensure sensitive information never makes its way to your
@@ -90,7 +90,7 @@
           </section>
         </li>
         <li class="flex-col-gap-8">
-          <img src="./src/assets/images/icon-text.svg" alt="" class="h-8 object-contain">
+          <img src="./src/assets/images/icon-text.svg" alt="" aria-hidden="true" class="h-8 object-contain">
           <section class="flex-col-gap-2">
             <h3 class="section-title-xl">Plain text snippets</h3>
             <p class="max-w-[760px] lg:text-xl/normal">Remove unwanted formatting from copied text for a consistent
@@ -98,7 +98,7 @@
           </section>
         </li>
         <li class="flex-col-gap-8">
-          <img src="./src/assets/images/icon-preview.svg" alt="" class="h-8 object-contain">
+          <img src="./src/assets/images/icon-preview.svg" alt="" aria-hidden="true" class="h-8 object-contain">
           <section class="flex-col-gap-2">
             <h3 class="section-title-xl">Sneak preview</h3>
             <p class="max-w-[760px] lg:text-xl/normal">Quick preview of all snippets on your Clipboard for easy access.
@@ -144,7 +144,7 @@
       </ul>
     </section>
   </main>
-  <footer class="bg-gray-500/10 w-full flex justify-center items-center !py-10">
+  <footer class="bg-gray-500/10 w-full flex grow justify-center items-center !py-10">
     <div class="max-w-[calc(1440px_-_160px)] w-full flex-col-gap-10 md:gap-20">
       <div class="w-full flex-col-gap-10 justify-between lg:flex-row">
         <div class="flex-col-gap-8 lg:flex-row lg:items-center lg:gap-20 xl:gap-28">
