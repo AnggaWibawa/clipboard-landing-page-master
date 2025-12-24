@@ -10,17 +10,11 @@
 </head>
 
 <body
-  class="md:[&>*:not(img):not(footer)]:max-w-[1440px] min-h-screen bg-gray-500/10 text-gray-500 font-body flex flex-col justify-center items-center text-center [&>*:not(img)]:p-[2.150rem] md:[&>*:not(img)]:p-20">
-  <!-- Mobile Header Background -->
-  <img src="./src/assets/images/bg-header-mobile.png" alt="Header Clipboard"
-    class="w-full absolute inset-0 z-[-1] lg:hidden">
-  <!-- Desktop Header Background -->
-  <img src="./src/assets/images/bg-header-desktop.png" alt="Header Clipboard"
-    class="w-full absolute inset-0 z-[-1] hidden lg:block">
+  class="bg-[url(./assets/images/bg-header-mobile.png)] bg-top bg-contain bg-no-repeat [&>*:not(img):not(footer)]:max-w-[1440px] min-h-screen text-gray-500 font-body flex flex-col justify-center items-center text-center [&>*:not(img)]:p-[2.150rem] md:bg-[url(./assets/images/bg-header-desktop.png)] md:[&>*:not(img)]:p-20">
   <main class="flex flex-col grow gap-40 !py-32">
     <section class="flex flex-col justify-center items-center gap-5 md:gap-10">
       <figure class="flex justify-center items-center">
-        <img src="./src/assets/images/logo.svg" alt="Clipboard logo" class="w-28 object-contain">
+        <img src="./src/assets/images/logo.svg" alt="Clipboard logo" class="w-28 object-contain xl:w-32">
       </figure>
       <header class="flex-col-gap-3 items-center">
         <h1 class="section-title-3xl">A history of everything you copy</h1>
@@ -150,24 +144,18 @@
       </ul>
     </section>
   </main>
-  <footer class="bg-gray-700/10 w-full flex justify-center items-center !py-10">
+  <footer class="bg-gray-500/10 w-full flex justify-center items-center !py-10">
     <div class="max-w-[calc(1440px_-_160px)] w-full flex-col-gap-10 md:gap-20">
       <div class="w-full flex-col-gap-10 justify-between lg:flex-row">
-        <div class="flex-col-gap-8 lg:flex-row lg:items-center lg:gap-28">
+        <div class="flex-col-gap-8 lg:flex-row lg:items-center lg:gap-20 xl:gap-28">
           <a href="#" class="w-fit self-center"><img src="./src/assets/images/logo.svg" alt="Clipboard logo"
-              class="h-12 object-contain"></a>
-          <ul class="grid grid-cols-1 gap-5 lg:grid-cols-3 lg:gap-10">
-            <div class=" w-full h-full flex flex-col gap-5 lg:gap-2 lg:items-start">
-              <li><a href="#" class="nav-button">FAQs</a></li>
-              <li><a href="#" class="nav-button">Contact Us</a></li>
-            </div>
-            <div class="w-full h-full flex flex-col gap-5 lg:gap-2 lg:items-start">
-              <li><a href="#" class="nav-button">Privacy Policy</a></li>
-              <li><a href="#" class="nav-button">Press Kit</a></li>
-            </div>
-            <div class="w-full h-full flex flex-col gap-5 lg:gap-2 lg:items-start">
-              <li><a href="#" class="nav-button">Install Guide</a></li>
-            </div>
+              class="h-12 object-contain lg:h-16"></a>
+          <ul class="grid grid-cols-1 gap-y-4 lg:grid-flow-col lg:grid-rows-2 lg:gap-x-14 lg:text-left xl:gap-x-20">
+            <li><a href="#" class="nav-button">FAQs</a></li>
+            <li><a href="#" class="nav-button">Contact Us</a></li>
+            <li><a href="#" class="nav-button">Privacy Policy</a></li>
+            <li><a href="#" class="nav-button">Press Kit</a></li>
+            <li><a href="#" class="nav-button">Install Guide</a></li>
           </ul>
         </div>
         <ul class="flex justify-center items-center gap-5">
