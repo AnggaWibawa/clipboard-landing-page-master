@@ -6,21 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/clipboard-landing-page-master/assets/favicon-32x32-DQjEQYWa.png">
   <title>Frontend Mentor | Clipboard landing page</title>
-  <link rel="stylesheet" crossorigin href="/clipboard-landing-page-master/assets/index-OQZVSiMd.css">
+  <link rel="stylesheet" crossorigin href="/clipboard-landing-page-master/assets/index-Bfzj44oH.css">
 </head>
 
 <body
-  class="md:[&>*:not(img):not(footer)]:max-w-[1440px] min-h-screen bg-gray-500/10 text-gray-500 font-body flex flex-col justify-center items-center text-center [&>*:not(img)]:p-[2.150rem] md:[&>*:not(img)]:p-20">
-  <!-- Mobile Header Background -->
-  <img src="/clipboard-landing-page-master/assets/bg-header-mobile-DjG3iMTD.png" alt="Header Clipboard"
-    class="w-full absolute inset-0 z-[-1] lg:hidden">
-  <!-- Desktop Header Background -->
-  <img src="/clipboard-landing-page-master/assets/bg-header-desktop-B5u4wcCW.png" alt="Header Clipboard"
-    class="w-full absolute inset-0 z-[-1] hidden lg:block">
+  class="bg-[url(./assets/images/bg-header-mobile.png)] bg-top bg-contain bg-no-repeat [&>*:not(img):not(footer)]:max-w-[1440px] min-h-screen text-gray-500 font-body flex flex-col justify-center items-center text-center [&>*:not(img)]:p-[2.150rem] md:bg-[url(./assets/images/bg-header-desktop.png)] md:[&>*:not(img)]:p-20">
   <main class="flex flex-col grow gap-40 !py-32">
     <section class="flex flex-col justify-center items-center gap-5 md:gap-10">
       <figure class="flex justify-center items-center">
-        <img src="data:image/svg+xml,%3csvg%20width='125'%20height='125'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke='%2326BBA4'%20stroke-width='10'%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20cx='62.5'%20cy='62.5'%20r='57.5'/%3e%3cpath%20d='M85.481%2085.481c-12.692%2012.692-33.27%2012.692-45.962%200s-12.692-33.27%200-45.962%2033.27-12.692%2045.962%200'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e" alt="Clipboard logo" class="w-28 object-contain">
+        <img src="data:image/svg+xml,%3csvg%20width='125'%20height='125'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke='%2326BBA4'%20stroke-width='10'%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20cx='62.5'%20cy='62.5'%20r='57.5'/%3e%3cpath%20d='M85.481%2085.481c-12.692%2012.692-33.27%2012.692-45.962%200s-12.692-33.27%200-45.962%2033.27-12.692%2045.962%200'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e" alt="Clipboard logo" class="w-28 object-contain xl:w-32">
       </figure>
       <header class="flex-col-gap-3 items-center">
         <h1 class="section-title-3xl">A history of everything you copy</h1>
@@ -150,24 +144,18 @@
       </ul>
     </section>
   </main>
-  <footer class="bg-gray-700/10 w-full flex justify-center items-center !py-10">
+  <footer class="bg-gray-500/10 w-full flex justify-center items-center !py-10">
     <div class="max-w-[calc(1440px_-_160px)] w-full flex-col-gap-10 md:gap-20">
       <div class="w-full flex-col-gap-10 justify-between lg:flex-row">
-        <div class="flex-col-gap-8 lg:flex-row lg:items-center lg:gap-28">
+        <div class="flex-col-gap-8 lg:flex-row lg:items-center lg:gap-20 xl:gap-28">
           <a href="#" class="w-fit self-center"><img src="data:image/svg+xml,%3csvg%20width='125'%20height='125'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20stroke='%2326BBA4'%20stroke-width='10'%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20cx='62.5'%20cy='62.5'%20r='57.5'/%3e%3cpath%20d='M85.481%2085.481c-12.692%2012.692-33.27%2012.692-45.962%200s-12.692-33.27%200-45.962%2033.27-12.692%2045.962%200'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e" alt="Clipboard logo"
-              class="h-12 object-contain"></a>
-          <ul class="grid grid-cols-1 gap-5 lg:grid-cols-3 lg:gap-10">
-            <div class=" w-full h-full flex flex-col gap-5 lg:gap-2 lg:items-start">
-              <li><a href="#" class="nav-button">FAQs</a></li>
-              <li><a href="#" class="nav-button">Contact Us</a></li>
-            </div>
-            <div class="w-full h-full flex flex-col gap-5 lg:gap-2 lg:items-start">
-              <li><a href="#" class="nav-button">Privacy Policy</a></li>
-              <li><a href="#" class="nav-button">Press Kit</a></li>
-            </div>
-            <div class="w-full h-full flex flex-col gap-5 lg:gap-2 lg:items-start">
-              <li><a href="#" class="nav-button">Install Guide</a></li>
-            </div>
+              class="h-12 object-contain lg:h-16"></a>
+          <ul class="grid grid-cols-1 gap-y-4 lg:grid-flow-col lg:grid-rows-2 lg:gap-x-14 lg:text-left xl:gap-x-20">
+            <li><a href="#" class="nav-button">FAQs</a></li>
+            <li><a href="#" class="nav-button">Contact Us</a></li>
+            <li><a href="#" class="nav-button">Privacy Policy</a></li>
+            <li><a href="#" class="nav-button">Press Kit</a></li>
+            <li><a href="#" class="nav-button">Install Guide</a></li>
           </ul>
         </div>
         <ul class="flex justify-center items-center gap-5">
